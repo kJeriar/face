@@ -9,19 +9,18 @@
   </head>
 
   <body>
-
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="true" data-auto-logout-link="true" data-use-continue-as="true"></div>
 
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '321719024935151',
+      appId      : '1238444252950751',
       cookie     : true,
       xfbml      : true,
       version    : 'v2.8'
     });
     FB.AppEvents.logPageView();   
   };
-
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
@@ -31,14 +30,14 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-
-<fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">
-</fb:login-button>
-
-  
-    
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=1238444252950751";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!--link jquery y js-->
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/main.js"></script>
